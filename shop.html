@@ -35,57 +35,64 @@
             <li>средства для ухода</li>
         </ul>
         <section class="filters">
-            <h2 class="filters-title">производители</h2>
-            <ul class="fabricator-list">
-                <li>
-                    <label for="fabricator-item-1">
-                        <input type="checkbox" id="fabricator-item-1" name="fabricator">baxter of california
-                    </label>
-                </li>
-                <li>
-                    <label for="fabricator-item-2">
-                        <input type="checkbox" id="fabricator-item-2" name="fabricator">mr natty
-                    </label>
-                </li>
-                <li>
-                    <label for="fabricator-item-3">
-                        <input type="checkbox" id="fabricator-item-3" name="fabricator">suavecito
-                    </label>
-                </li>
-                <li>
-                    <label for="fabricator-item-4">
-                        <input type="checkbox" id="fabricator-item-4" name="fabricator">malin+goetz
-                    </label>
-                </li>
-                <li>
-                    <label for="fabricator-item-5">
-                        <input type="checkbox" id="fabricator-item-5" name="fabricator">murray's
-                    </label>
-                </li>
-                <li>
-                    <label for="fabricator-item-6">
-                        <input type="checkbox" id="fabricator-item-6" name="fabricator">american crew
-                    </label>
-                </li>
-            </ul>
-            <h2 class="filters-title">группы товаров:</h2>
-            <ul class="product-list">
-                <li>
-                    <label for="product-groups-1">
-                        <input type="radio" id="product-groups-1" name="productGroups" checked>бритвенные принадлежности
-                    </label>
-                </li>
-                <li>
-                    <label for="product-groups-2">
-                        <input type="radio" id="product-groups-2" name="productGroups">средства для ухода
-                    </label>
-                </li>
-                <li>
-                    <label for="product-groups-3">
-                        <input type="radio" id="product-groups-3" name="productGroups">аксессуары
-                    </label>
-                </li>
-            </ul>
+            <form action="" method="POST">
+                <fieldset>
+                    <legend class="filters-title">производители</legend>
+                    <ul class="fabricator-list">
+                        <li>
+                            <label for="fabricator-item-1">
+                                <input type="checkbox" id="fabricator-item-1" name="fabricator">baxter of california
+                            </label>
+                        </li>
+                        <li>
+                            <label for="fabricator-item-2">
+                                <input type="checkbox" id="fabricator-item-2" name="fabricator">mr natty
+                            </label>
+                        </li>
+                        <li>
+                            <label for="fabricator-item-3">
+                                <input type="checkbox" id="fabricator-item-3" name="fabricator">suavecito
+                            </label>
+                        </li>
+                        <li>
+                            <label for="fabricator-item-4">
+                                <input type="checkbox" id="fabricator-item-4" name="fabricator">malin+goetz
+                            </label>
+                        </li>
+                        <li>
+                            <label for="fabricator-item-5">
+                                <input type="checkbox" id="fabricator-item-5" name="fabricator">murray's
+                            </label>
+                        </li>
+                        <li>
+                            <label for="fabricator-item-6">
+                                <input type="checkbox" id="fabricator-item-6" name="fabricator">american crew
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend class="filters-title">группы товаров:</legend>
+                    <ul class="product-list">
+                        <li>
+                            <label for="product-groups-1">
+                                <input type="radio" id="product-groups-1" name="productGroups" checked>бритвенные принадлежности
+                            </label>
+                        </li>
+                        <li>
+                            <label for="product-groups-2">
+                                <input type="radio" id="product-groups-2" name="productGroups">средства для ухода
+                            </label>
+                        </li>
+                        <li>
+                            <label for="product-groups-3">
+                                <input type="radio" id="product-groups-3" name="productGroups">аксессуары
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
         </section> <!-- /.filters -->
         <section class="products">
             <article class="products-item">
@@ -94,7 +101,7 @@
                     <h1>baxter of california</h1>
                     <p>Набор для путешествий</p>
                 </a>
-                <div>
+                <div class="price">
                     <span>2 900 руб.</span>
                     <a href="#">Купить</a>
                 </div>
@@ -105,7 +112,7 @@
                     <h1>baxter of california</h1>
                     <p>Увлажняющий кондиционер</p>
                 </a>
-                <div>
+                <div class="price">
                     <span>2 900 руб.</span>
                     <a href="#">Купить</a>
                 </div>
@@ -116,7 +123,7 @@
                     <h1>sauvecito</h1>
                     <p>Гель для волос</p>
                 </a>
-                <div>
+                <div class="price">
                     <span>2 900 руб.</span>
                     <a href="#">Купить</a>
                 </div>
@@ -127,7 +134,7 @@
                     <h1>american crew</h1>
                     <p>Глина для укладки волос</p>
                 </a>
-                <div>
+                <div class="price">
                     <span>2 900 руб.</span>
                     <a href="#">Купить</a>
                 </div>
