@@ -9,3 +9,124 @@ body {
 h2 { font-size: 30px; }
 
 h3 { font-size: 24px; }
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid crimson;
+}
+
+.main-header {
+    margin-bottom: 60px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid green;
+}
+
+.main-navigation {
+    float: left;
+    width: 780px;
+
+    /* Только для оформления сетки */
+    min-height: 70px;
+    outline: 2px solid orange;
+}
+
+.user-block {
+    float: right;
+    width: 140px;
+
+    /* Только для оформления сетки */
+    min-height: 70px;
+    outline: 2px solid orange;
+}
+
+.index-logo {
+    width: 368px;
+    height: 204px;
+    margin: 0 auto 25px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid green;
+}
+
+.features { margin-bottom: 80px; }
+
+.features-item {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+
+    /* Только для оформления сетки */
+    min-height: 175px;
+    outline: 2px solid orange;
+}
+
+.features-item:last-child { margin-right: 0; }
+
+.index-content {
+    margin-bottom: 35px;
+    padding: 50px 80px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid green;
+}
+
+.index-content-left {
+    float: left;
+    width: 380px;
+
+    /* Только для оформления сетки */
+    min-height: 330px;
+    outline: 2px solid crimson;
+}
+
+.index-content-right {
+    float: right;
+    width: 300px;
+
+    /* Только для оформления сетки */
+    min-height: 330px;
+    outline: 2px solid crimson;
+}
+
+.main-footer {
+    margin-top: 65px;
+    padding: 60px 0 40px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid green;
+}
+
+.footer-contacts,
+.footer-social,
+.footer-copyright {
+    /* Только для оформления сетки */
+    min-height: 90px;
+    outline: 2px solid orange;
+}
+
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+}
+
+.footer-social {
+    float: left;
+    width: 180px;
+}
+
+.footer-copyright {
+    float: right;
+    width: 180px;
+}
