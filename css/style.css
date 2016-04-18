@@ -196,7 +196,7 @@ h3 { font-size: 24px; }
     width: 400px;
 
     /* Только для оформления сетки */
-    min-height: 450px;
+    min-height: 260px;
     outline: 2px solid violet;
 }
 
@@ -205,8 +205,30 @@ h3 { font-size: 24px; }
     width: 470px;
 
     /* Только для оформления сетки */
-    min-height: 450px;
+    min-height: 260px;
     outline: 2px solid violet;
+}
+
+.about {
+    /* Только для оформления сетки */
+    min-height: 170px;
+    outline: 2px solid violet;
+}
+
+.about-content-left {
+    float: left;
+    width: 400px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid orange;
+}
+
+.about-content-right {
+    float: right;
+    width: 400px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid orange;
 }
 /*=====  End of $Price Content  ======*/
 
