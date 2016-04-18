@@ -6,10 +6,21 @@ body {
     font-weight: bold;
 }
 
+/*=================================
+=            $Elements            =
+=================================*/
 h2 { font-size: 30px; }
 
 h3 { font-size: 24px; }
+/*=====  End of $Elements  ======*/
 
+
+
+
+
+/*================================================
+=            $Objects and abstraction            =
+================================================*/
 .clearfix::after {
     content: "";
     display: table;
@@ -24,7 +35,15 @@ h3 { font-size: 24px; }
     /* Только для оформления сетки */
     outline: 2px solid crimson;
 }
+/*=====  End of $Objects and abstraction  ======*/
 
+
+
+
+
+/*===============================
+=            $Header            =
+===============================*/
 .main-header {
     margin-bottom: 60px;
 
@@ -49,7 +68,15 @@ h3 { font-size: 24px; }
     min-height: 70px;
     outline: 2px solid orange;
 }
+/*=====  End of $Header  ======*/
 
+
+
+
+
+/*======================================
+=            $Index Content            =
+======================================*/
 .index-logo {
     width: 368px;
     height: 204px;
@@ -98,7 +125,15 @@ h3 { font-size: 24px; }
     min-height: 330px;
     outline: 2px solid crimson;
 }
+/*=====  End of $Index Content  ======*/
 
+
+
+
+
+/*===============================
+=            $Footer            =
+===============================*/
 .main-footer {
     margin-top: 65px;
     padding: 60px 0 40px;
@@ -130,3 +165,4 @@ h3 { font-size: 24px; }
     float: right;
     width: 180px;
 }
+/*=====  End of $Footer  ======*/
