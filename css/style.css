@@ -251,11 +251,14 @@ h3 { font-size: 24px; }
 .products-item {
     display: inline-block;
     width: 220px;
+    margin-right: 20px;
     margin-bottom: 20px;
     vertical-align: top;
 
-    outline: 2px solid green;
+    outline: 1px solid green;
 }
+
+.products-item:nth-child(3n) { margin-right: 0; }
 /*=====  End of $Shop Content  ======*/
 
 
