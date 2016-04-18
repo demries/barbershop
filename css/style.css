@@ -35,6 +35,11 @@ h3 { font-size: 24px; }
     /* Только для оформления сетки */
     outline: 2px solid crimson;
 }
+
+.breadcrumbs {
+    /* Только для оформления сетки */
+    outline: 2px solid green;
+}
 /*=====  End of $Objects and abstraction  ======*/
 
 
@@ -51,9 +56,19 @@ h3 { font-size: 24px; }
     outline: 2px solid green;
 }
 
+.logo {
+    float: left;
+    width: 111px;
+    height: 24px;
+    margin-right: 20px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid greenyellow;
+}
+
 .main-navigation {
     float: left;
-    width: 780px;
+    width: 660px;
 
     /* Только для оформления сетки */
     min-height: 70px;
@@ -126,6 +141,48 @@ h3 { font-size: 24px; }
     outline: 2px solid crimson;
 }
 /*=====  End of $Index Content  ======*/
+
+
+
+
+
+/*=====================================
+=            $Item Content            =
+=====================================*/
+.photo-gallery {
+    float: left;
+    margin-right: 10px;
+
+    /* Только для оформления сетки */
+    min-height: 670px;
+    outline: 2px solid cyan;
+}
+
+.description {
+    float: left;
+    width: 390px;
+
+    /* Только для оформления сетки */
+    min-height: 200px;
+    outline: 2px solid cyan;
+}
+
+.price {
+    float: left;
+
+    /* Только для оформления сетки */
+    min-height: 45px;
+    outline: 2px solid cyan;
+}
+
+.kit {
+    float: left;
+
+    /* Только для оформления сетки */
+    min-height: 175px;
+    outline: 2px solid cyan;
+}
+/*=====  End of $Item Content  ======*/
 
 
 
