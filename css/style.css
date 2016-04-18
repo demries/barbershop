@@ -168,16 +168,12 @@ h3 { font-size: 24px; }
 }
 
 .price {
-    float: left;
-
     /* Только для оформления сетки */
     min-height: 45px;
     outline: 2px solid cyan;
 }
 
 .kit {
-    float: left;
-
     /* Только для оформления сетки */
     min-height: 175px;
     outline: 2px solid cyan;
@@ -231,6 +227,37 @@ h3 { font-size: 24px; }
     outline: 2px solid orange;
 }
 /*=====  End of $Price Content  ======*/
+
+
+
+
+
+/*=====================================
+=            $Shop Content            =
+=====================================*/
+.filters {
+    float: left;
+    width: 220px;
+}
+
+.products {
+    float: right;
+    width: 700px;
+
+    /* Только для оформления сетки */
+    outline: 2px solid violet;
+}
+
+.products-item {
+    display: inline-block;
+    width: 220px;
+    margin-bottom: 20px;
+    vertical-align: top;
+
+    outline: 2px solid green;
+}
+/*=====  End of $Shop Content  ======*/
+
 
 
 
