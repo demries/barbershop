@@ -39,6 +39,37 @@ h3 { font-size: 24px; }
     /*outline: 2px solid crimson;*/
 }
 
+.btn {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 33px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    vertical-align: top;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active { background-color: #663d15; }
+
+.btn.disabled,
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover { background-color: #000000; }
+
 .breadcrumbs {
     /* Только для оформления сетки */
     outline: 2px solid green;
@@ -144,9 +175,11 @@ h3 { font-size: 24px; }
     width: 368px;
     height: 204px;
     margin: 0 auto 25px;
+}
 
-    /* Только для оформления сетки */
-    outline: 2px solid green;
+.index-logo img {
+    width: 368px;
+    height: 204px;
 }
 
 .features { margin-bottom: 80px; }
@@ -155,38 +188,135 @@ h3 { font-size: 24px; }
     float: left;
     width: 300px;
     margin-right: 20px;
-
-    /* Только для оформления сетки */
-    min-height: 175px;
-    outline: 2px solid orange;
+    text-align: center;
 }
 
 .features-item:last-child { margin-right: 0; }
 
+.features-name {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.features-item p {
+    margin: 10px;
+    margin-bottom: 0;
+}
+
+.features-name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+}
+
 .index-content {
     margin-bottom: 35px;
     padding: 50px 80px;
-
-    /* Только для оформления сетки */
-    outline: 2px solid green;
+    color: #000000;
+    background: url(../img/dividing-line.png) no-repeat center,
+            #f8f5f2 url(../img/index-content-bg.png);
 }
 
 .index-content-left {
     float: left;
     width: 380px;
-
-    /* Только для оформления сетки */
-    min-height: 330px;
-    outline: 2px solid crimson;
 }
 
 .index-content-right {
     float: right;
     width: 300px;
+}
 
-    /* Только для оформления сетки */
-    min-height: 330px;
-    outline: 2px solid crimson;
+.index-content-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.index-content p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.news-preview {
+    margin: 0;
+    padding: 0;
+    padding-right: 35px;
+    list-style: none;
+}
+
+.news-preview li { margin-bottom: 25px; }
+
+.news-preview p { margin-bottom: 0; }
+
+.news-preview time {
+    text-transform: none;
+    font-weight: 400;
+}
+
+.gallery {
+    position: relative;
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-prev { left: 0; }
+
+.gallery-next { right: 0; }
+
+.appointment-form input {
+    float: left;
+    width: 106px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 7px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+    outline: none;
+}
+
+.appointment-form input:focus { border: 2px solid #663d15; }
+
+.appointment-form input:nth-child(even) { margin-right: 0; }
+
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
 }
 /*=====  End of $Index Content  ======*/
 
@@ -321,17 +451,8 @@ h3 { font-size: 24px; }
 .main-footer {
     margin-top: 65px;
     padding: 60px 0 40px;
-
-    /* Только для оформления сетки */
-    outline: 2px solid green;
-}
-
-.footer-contacts,
-.footer-social,
-.footer-copyright {
-    /* Только для оформления сетки */
-    min-height: 90px;
-    outline: 2px solid orange;
+    color: #ffffff;
+    background: #232323 url(../img/footer-bg.png);
 }
 
 .footer-contacts {
@@ -340,13 +461,86 @@ h3 { font-size: 24px; }
     margin-right: 60px;
 }
 
+.footer-contacts a { color: #ffffff; }
+
+.footer-contacts a:hover { text-decoration: none; }
+
 .footer-social {
     float: left;
     width: 180px;
+    text-align: center;
 }
+
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.social-btn {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+    background-color: #000000;
+    transition: background-color 0.5s;
+}
+
+.social-btn:hover { background-color: #ffffff; }
+
+.social-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    transition: background-position 0.5s;
+}
+
+.social-btn-vk::before {
+    width: 25px;
+    height: 16px;
+    background-position: -122px -2px;
+}
+
+.social-btn-fb::before {
+    width: 12px;
+    height: 22px;
+    background-position: -18px -2px;
+}
+
+.social-btn-inst::before {
+    width: 21px;
+    height: 21px;
+    background-position: -50px -2px;
+}
+
+.social-btn-vk:hover::before { background-position: -151px -2px; }
+
+.social-btn-fb:hover::before { background-position: -34px -2px; }
+
+.social-btn-inst:hover::before { background-position: -75px -2px; }
 
 .footer-copyright {
     float: right;
-    width: 180px;
+    max-width: 180px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-copyright .btn { margin-right: 0; }
+
+.footer-copyright .btn:hover {
+    color: #000000;
+    background-color: #ffffff;
 }
 /*=====  End of $Footer  ======*/
