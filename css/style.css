@@ -1,9 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    min-width: 960px;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
-    color: #000000;
-    font-weight: bold;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #000000 url(../img/index-bg.jpg) no-repeat center top;
 }
 
 /*=================================
@@ -33,7 +36,7 @@ h3 { font-size: 24px; }
     padding: 0 10px;
 
     /* Только для оформления сетки */
-    outline: 2px solid crimson;
+    /*outline: 2px solid crimson;*/
 }
 
 .breadcrumbs {
@@ -51,9 +54,8 @@ h3 { font-size: 24px; }
 ===============================*/
 .main-header {
     margin-bottom: 60px;
-
-    /* Только для оформления сетки */
-    outline: 2px solid green;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 .logo {
@@ -69,20 +71,66 @@ h3 { font-size: 24px; }
 .main-navigation {
     float: left;
     width: 660px;
+}
 
-    /* Только для оформления сетки */
-    min-height: 70px;
-    outline: 2px solid orange;
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.main-navigation a {
+    display: block;
+    padding: 25px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-navigation a:hover {
+    background-color: #242424;
 }
 
 .user-block {
     float: right;
-    width: 140px;
-
-    /* Только для оформления сетки */
-    min-height: 70px;
-    outline: 2px solid orange;
+    max-width: 140px;
 }
+
+.login {
+    position: relative;
+    display: inline-block;
+    padding: 25px 20px;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: top;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.login:hover {
+    background-color: #242424;
+}
+
+.login::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    background: transparent url(../img/sprite.png) no-repeat -100px -2px;
+    opacity: 0.3;
+}
+
+.login:hover::before { opacity: 1; }
 /*=====  End of $Header  ======*/
 
 
