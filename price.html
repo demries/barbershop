@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Барбершоп &laquo;Бородинский&raquo; - Price</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <style>
         .content-title::before,
@@ -18,22 +20,20 @@
 <body>
     <header class="main-header">
         <div class="container clearfix">
-            <a class="logo" href="index.html">
-                <img src="img/logo.png" width="111" height="24" alt="Логотип Barbershop">
-            </a>
             <nav class="main-navigation">
+                <a class="logo-inner" href="index.html">
+                    <img src="img/inner-logo.png" width="111" height="24" alt="Барбершоп &laquo;Бородинский&raquo;">
+                </a>
                 <ul>
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Новости</a></li>
-                    <li><a href="price.html">Прайс-лист</a></li>
+                    <li class="active"><span>Прайс-лист</span></li>
                     <li><a href="shop.html">Магазин</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
             </nav>
             <div class="user-block">
-                <a href="#" class="login">
-                    <img src="img/ico-login.png" width="18" height="16" alt="Вход"> Вход
-                </a>
+                <a href="#" class="login">Вход</a>
             </div>
         </div>
     </header>

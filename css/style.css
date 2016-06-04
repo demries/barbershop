@@ -89,19 +89,9 @@ h3 { font-size: 24px; }
     background-color: #000000;
 }
 
-.logo {
-    float: left;
-    width: 111px;
-    height: 24px;
-    margin-right: 20px;
-
-    /* Только для оформления сетки */
-    outline: 2px solid greenyellow;
-}
-
 .main-navigation {
     float: left;
-    width: 660px;
+    width: 800px;
 }
 
 .main-navigation ul {
@@ -128,6 +118,44 @@ h3 { font-size: 24px; }
 .main-navigation a:hover {
     background-color: #242424;
 }
+
+.main-navigation .active {
+    position: relative;
+    background-color: none;
+}
+
+.main-navigation .active a:hover {
+    background: none;
+}
+
+.main-navigation .active::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+.main-navigation .active span {
+    display: block;
+    padding: 25px 20px;
+}
+
+.main-navigation .logo-inner {
+    float: left;
+    width: 111px;
+    height: 24px;
+    padding-top: 22px;
+}
+
+.main-navigation .logo-inner img {
+    width: 111px;
+    height: 24px;
+}
+
+.main-navigation .logo-inner:hover { background: none; }
 
 .user-block {
     float: right;
