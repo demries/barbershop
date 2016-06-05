@@ -6,7 +6,7 @@ body {
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
-    background: #000000 url(../img/index-bg.jpg) no-repeat center top;
+    background: #000000 url("../img/index-bg.jpg") no-repeat center top;
 }
 
 .inner-page {
@@ -187,7 +187,7 @@ h3 { font-size: 24px; }
     left: 20px;
     width: 18px;
     height: 18px;
-    background: transparent url(../img/sprite.png) no-repeat -100px -2px;
+    background: transparent url("../img/sprite.png") no-repeat -100px -2px;
     opacity: 0.3;
 }
 
@@ -254,8 +254,8 @@ h3 { font-size: 24px; }
     margin-bottom: 35px;
     padding: 50px 80px;
     color: #000000;
-    background: url(../img/dividing-line.png) no-repeat center,
-            #f8f5f2 url(../img/index-content-bg.png);
+    background: url("../img/dividing-line.png") no-repeat center,
+            #f8f5f2 url("../img/index-content-bg.png");
 }
 
 .index-content-left {
@@ -395,7 +395,49 @@ h3 { font-size: 24px; }
 /*======================================
 =            $Price Content            =
 ======================================*/
+.inner-page-title { margin-bottom: 55px; }
 
+.inner-page-title h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs li {
+    position: relative;
+    display: inline;
+    padding-right: 40px;
+}
+
+.breadcrumbs li::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover { text-decoration: underline; }
+
+.breadcrumbs .current { color: #aba9a7; }
+
+.breadcrumbs .current::after { display: none; }
 /*=====  End of $Price Content  ======*/
 
 
@@ -444,7 +486,7 @@ h3 { font-size: 24px; }
     margin-top: 65px;
     padding: 60px 0 40px;
     color: #ffffff;
-    background: #232323 url(../img/footer-bg.png);
+    background: #232323 url("../img/footer-bg.png");
 }
 
 .footer-contacts {
@@ -489,7 +531,7 @@ h3 { font-size: 24px; }
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(../img/sprite.png);
+    background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     transition: background-position 0.5s;
 }
