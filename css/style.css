@@ -9,6 +9,11 @@ body {
     background: #000000 url(../img/index-bg.jpg) no-repeat center top;
 }
 
+.inner-page {
+    color: #000000;
+    background: #f8f5f2 url("../img/index-content-bg.png") repeat;
+}
+
 /*=================================
 =            $Elements            =
 =================================*/
@@ -69,11 +74,6 @@ h3 { font-size: 24px; }
 
 .btn.disabled:hover,
 .btn:disabled:hover { background-color: #000000; }
-
-.breadcrumbs {
-    /* Только для оформления сетки */
-    outline: 2px solid green;
-}
 /*=====  End of $Objects and abstraction  ======*/
 
 
@@ -88,6 +88,8 @@ h3 { font-size: 24px; }
     color: #ffffff;
     background-color: #000000;
 }
+
+.inner-page .main-header { margin-bottom: 55px; }
 
 .main-navigation {
     float: left;
@@ -132,7 +134,7 @@ h3 { font-size: 24px; }
     content: "";
     position: absolute;
     right: 20px;
-    bottom: 0;
+    bottom: -1px;
     left: 20px;
     height: 4px;
     background-color: #ffffff;
@@ -393,45 +395,7 @@ h3 { font-size: 24px; }
 /*======================================
 =            $Price Content            =
 ======================================*/
-.price-content-left {
-    float: left;
-    width: 400px;
 
-    /* Только для оформления сетки */
-    min-height: 260px;
-    outline: 2px solid violet;
-}
-
-.price-content-right {
-    float: right;
-    width: 470px;
-
-    /* Только для оформления сетки */
-    min-height: 260px;
-    outline: 2px solid violet;
-}
-
-.about {
-    /* Только для оформления сетки */
-    min-height: 170px;
-    outline: 2px solid violet;
-}
-
-.about-content-left {
-    float: left;
-    width: 400px;
-
-    /* Только для оформления сетки */
-    outline: 2px solid orange;
-}
-
-.about-content-right {
-    float: right;
-    width: 470px;
-
-    /* Только для оформления сетки */
-    outline: 2px solid orange;
-}
 /*=====  End of $Price Content  ======*/
 
 
