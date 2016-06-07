@@ -521,6 +521,24 @@ h3 { font-size: 24px; }
 .price-table td { width: 50%; }
 
 .price-table td:last-child { text-align: center; }
+
+.short-text { padding-right: 80px; }
+
+/* Колонки для контента */
+.inner-columns { margin: 60px 0; }
+
+.inner-column-left,
+.inner-column-right { width: 460px; }
+
+.inner-column-left { float: left; }
+
+.inner-column-right { float: right; }
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child { margin-top: 0; }
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child { margin-bottom: 0; }
 /*=====  End of $Price Content  ======*/
 
 
