@@ -100,22 +100,22 @@
     </footer>
 
     <!-- Всплывающие окна -->
+
     <!-- Авторизация -->
-    <div class="popup" style="display: none;">
-        <h2>Личный кабинет</h2>
-        <p class="help-block">введите пожалуйста свой логин и пароль</p>
-        <form action="" method="post">
-            <div>
-                <input type="text" name="login" value="" placeholder="ЛОГИН">
-            </div>
-            <div>
-                <input type="password" name="password" value="" placeholder="ПАРОЛЬ">
-            </div>
-            <div>
-                <label for="remember"><input type="checkbox" id="remember"> запомнить меня</label>
-                <a href="#" class="forgot">я забыл пароль</a>
-            </div>
-            <button type="submit">Войти</button>
+    <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <h2 class="modal-content-title">Личный кабинет</h2>
+        <p>Введите свой логин и пароль</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <input class="icon-user" type="text" name="login" placeholder="Логин">
+            <input class="icon-password" type="password"  name="password" placeholder="Пароль">
+            <label class="login-checkbox">
+                <input type="checkbox" name="remember">
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+            <button class="btn" type="submit">Войти</button>
         </form>
     </div>
 </body>
