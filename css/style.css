@@ -680,7 +680,13 @@ h3 { font-size: 24px; }
 }
 /*=====  End of $Footer  ======*/
 
-/* Всплывающая форма */
+
+
+
+
+/*================================================
+=            Всплывающие окна (popup)            =
+================================================*/
 
 .modal-overlay {
     position: fixed;
@@ -840,3 +846,5 @@ h3 { font-size: 24px; }
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before { transform: rotate(45deg); }
 
 .login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after { transform: rotate(-45deg); }
+
+/*=====  End of Всплывающие формы (popup)  ======*/
