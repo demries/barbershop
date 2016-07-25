@@ -434,8 +434,19 @@ h3 { font-size: 24px; }
 
     /* Только для оформления сетки */
     min-height: 670px;
-    outline: 2px solid cyan;
+    outline: 1px solid cyan;
 }
+
+.photo-gallery-content {
+    width: 460px;
+    min-height: 200px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    outline: 1px solid red;
+}
+
+.photo-gallery-content > img { width: 460px; }
 
 .description {
     float: left;
