@@ -431,22 +431,39 @@ h3 { font-size: 24px; }
 .photo-gallery {
     float: left;
     margin-right: 10px;
-
-    /* Только для оформления сетки */
-    min-height: 670px;
-    outline: 1px solid cyan;
 }
 
 .photo-gallery-content {
     width: 460px;
     min-height: 200px;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     line-height: 0;
-    outline: 1px solid red;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .photo-gallery-content > img { width: 460px; }
+
+.photo-gallery-mini {
+    text-align: center;
+    line-height: 0;
+}
+
+.photo-gallery-mini> a {
+    display: inline-block;
+    margin-right: 20px;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+            box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.photo-gallery-mini> a:last-child { margin-right: 0; }
+
+.photo-gallery-mini> a > img {
+    width: 140px;
+    height: 149px;
+}
 
 .description {
     float: left;
