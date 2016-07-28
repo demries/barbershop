@@ -428,10 +428,7 @@ h3 { font-size: 24px; }
 /*=====================================
 =            $Item Content            =
 =====================================*/
-.photo-gallery {
-    float: left;
-    margin-right: 10px;
-}
+.photo-gallery { float: left; }
 
 .photo-gallery-content {
     width: 460px;
@@ -468,24 +465,66 @@ h3 { font-size: 24px; }
 }
 
 .description {
-    float: left;
+    float: right;
     width: 390px;
+}
 
-    /* Только для оформления сетки */
-    min-height: 200px;
-    outline: 2px solid cyan;
+.description > span {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.item-code {
+    float: right;
+    color: #aeaeae;
+}
+
+.description > p {
+    clear: both;
+    margin: 30px 0 35px;
 }
 
 .price {
-    /* Только для оформления сетки */
-    min-height: 45px;
-    outline: 2px solid cyan;
+    margin-bottom: 65px;
+    font-size: 0;
 }
 
-.kit {
-    /* Только для оформления сетки */
-    min-height: 175px;
-    outline: 2px solid cyan;
+.price > span {
+    display: inline-block;
+    padding: 10px 30px;;
+    vertical-align: top;
+    font-size: 14px;
+    background-color: #e5e5e5;
+}
+
+.kit-title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.kit-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.kit-list > li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.kit-list > li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    background-color: #000000;
+    transform: rotate(45deg);
 }
 /*=====  End of $Item Content  ======*/
 
