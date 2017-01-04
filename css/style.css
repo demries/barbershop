@@ -145,6 +145,8 @@ h3 { font-size: 24px; }
     padding: 10px 15px;
     border: 2px solid #000000;
 }
+
+.disabled { opacity: 0.3; }
 /*=====  End of $Objects and abstraction  ======*/
 
 
@@ -707,9 +709,6 @@ input[type="radio"]:checked + label::before {
 .products {
     float: right;
     width: 700px;
-
-    /* Только для оформления сетки */
-    outline: 1px solid violet;
 }
 
 .products-item {
@@ -763,6 +762,40 @@ input[type="radio"]:checked + label::before {
     margin-right: 0;
     box-sizing: border-box;
 }
+
+/* paginator */
+.paginator {
+    margin-top: 25px;
+    white-space: nowrap;
+}
+
+.paginator a {
+    display: inline-block;
+    min-width: 33px;
+    height: 43px;
+    margin-right: 4px;
+    padding: 0 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 43px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    background: #000000;
+}
+
+.paginator a:last-child { margin-right: 0; }
+
+.paginator a:hover { background-color: #663d15; }
+
+.paginator .current,
+.paginator .current:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+/* End paginator */
+
 /*=====  End of $Shop Content  ======*/
 
 
