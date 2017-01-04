@@ -489,8 +489,10 @@ h3 { font-size: 24px; }
 
 .price > span {
     display: inline-block;
-    padding: 10px 30px;;
     vertical-align: top;
+    width: 100px;
+    padding: 10px 5px;
+    text-align: center;
     font-size: 14px;
     background-color: #e5e5e5;
 }
@@ -709,20 +711,60 @@ input[type="radio"]:checked + label::before {
     width: 700px;
 
     /* Только для оформления сетки */
-    outline: 2px solid violet;
+    outline: 1px solid violet;
 }
 
 .products-item {
     display: inline-block;
+    vertical-align: top;
     width: 220px;
     margin-right: 20px;
     margin-bottom: 20px;
-    vertical-align: top;
-
-    outline: 1px solid green;
+    padding-bottom: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-.products-item:nth-child(3n) { margin-right: 0; }
+.products-item:nth-child(3n + 3) { margin-right: 0; }
+
+.products-item-title {
+    display: block;
+    margin-bottom: 15px;
+    line-height: 0;
+    text-decoration: none;
+}
+
+.products-item-title > img {
+    width: 220px;
+    height: 165px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.products-item-title > h1 {
+    margin: 0;
+    margin-top: 15px;
+    padding: 0 15px;
+    font-family: 'PT Sans Narrow';
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.products-item-category { text-transform: none; }
+
+.products-item .price {
+    margin-bottom: 0;
+    padding: 0 15px;
+}
+
+.products-item .price > .btn {
+    width: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 0;
+    box-sizing: border-box;
+}
 /*=====  End of $Shop Content  ======*/
 
 
