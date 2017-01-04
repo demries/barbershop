@@ -619,13 +619,12 @@ h3 { font-size: 24px; }
     float: left;
     width: 220px;
     padding: 0 10px;
-    outline: 1px solid #008FC4;
 }
 
 .filters fieldset {
+    margin-bottom: 50px;
     padding: 0;
     border: none;
-    outline: 1px solid #44098D;
 }
 
 .filter-title {
@@ -640,22 +639,29 @@ h3 { font-size: 24px; }
     list-style: none;
 }
 
+.filter-item { margin: 15px 0; }
+
+.filter-item:first-child { margin-top: 0; }
+
+.filter-item:last-child { margin-bottom: 0; }
+
 .filter-item > label {
     position: relative;
     display: inline-block;
     padding-left: 45px;
-    line-height: 20px;
-    outline: 1px solid orange;
+    line-height: 18px;
 }
 
 .filter-item  label { cursor: pointer; }
 
 /* checkbox/radio */
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
     display: none;
 }
 
-input[type="checkbox"] + label {
+input[type="checkbox"] + label,
+input[type="radio"] + label {
     position: absolute;
     top: 0;
     left: 0;
@@ -663,6 +669,10 @@ input[type="checkbox"] + label {
     height: 16px;
     border: 2px solid #000000;
     background-color: #f9f6f3;
+}
+
+input[type="radio"] + label {
+    border-radius: 50%;
 }
 
 input[type="checkbox"]:checked + label::before,
@@ -680,6 +690,18 @@ input[type="checkbox"]:checked + label::after {
 input[type="checkbox"] + label::before { transform: rotate(45deg); }
 
 input[type="checkbox"] + label::after { transform: rotate(-45deg); }
+
+input[type="radio"]:checked + label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    border-radius: 50%;
+}
 /* End checkbox/radio */
 
 .products {
