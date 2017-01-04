@@ -656,11 +656,11 @@ h3 { font-size: 24px; }
 
 .filter-item  label { cursor: pointer; }
 
+.filter-item  label:hover { color: #663d15; }
+
 /* checkbox/radio */
 input[type="checkbox"],
-input[type="radio"] {
-    display: none;
-}
+input[type="radio"] { display: none; }
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
@@ -673,9 +673,7 @@ input[type="radio"] + label {
     background-color: #f9f6f3;
 }
 
-input[type="radio"] + label {
-    border-radius: 50%;
-}
+input[type="radio"] + label { border-radius: 50%; }
 
 input[type="checkbox"]:checked + label::before,
 input[type="checkbox"]:checked + label::after {
