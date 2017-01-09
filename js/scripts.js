@@ -1,3 +1,4 @@
+var overlay = document.querySelector('.modal-overlay');
 // Находим объект с классом login
 var link = document.querySelector('.login');
 // Находим модальное окно с классом modal-content
@@ -12,6 +13,11 @@ var password = popup.querySelector('[name="password"]');
 var form = popup.querySelector('form');
 // Получаем значение login из локального хранилища
 var storage = localStorage.getItem('login');
+
+// Для карты
+var mapOpen = document.querySelector('#js-open-map');
+var mapPopup = document.querySelector('.modal-content-map');
+var mapClose = mapPopup.querySelector('.modal-content-close');
 
 // Отлавливаем событие 'click' у объекта с классом login
 link.addEventListener('click', function(e) {
@@ -48,9 +54,29 @@ form.addEventListener('submit', function(e) {
     }
 });
 
+// для карты
+mapOpen.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    overlay.style.display = 'block';
+    mapPopup.classList.add('modal-content-show');
+});
+
+mapClose.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    mapPopup.classList.remove('modal-content-show');
+    overlay.style.display = '';
+});
+
 // Закрытие модального окна по нажатию на Esc
 window.addEventListener('keydown', function(e) {
     if ( e.keyCode === 27 && popup.classList.contains('modal-content-show') )
         popup.classList.remove('modal-content-show');
         popup.classList.remove('modal-error');
+
+    if ( e.keyCode === 27 && mapPopup.classList.contains('modal-content-show') ) {
+        mapPopup.classList.remove('modal-content-show');
+        overlay.style.display = '';
+    }
 });
