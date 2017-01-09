@@ -32,12 +32,16 @@ close.addEventListener('click', function(e) {
 
     // Удаляем у модального окна класс modal-content-show
     popup.classList.remove('modal-content-show');
+    popup.classList.remove('modal-error');
 });
 
 // Отлавливаем событие отправки формы модального окна
 form.addEventListener('submit', function(e) {
     if ( !login.value || !password.value ) {
         e.preventDefault();
+        popup.classList.remove('modal-error');
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add('modal-error');
         console.log('Нужно ввести логин и пароль');
     } else {
         localStorage.setItem('login', login.value);
@@ -48,4 +52,5 @@ form.addEventListener('submit', function(e) {
 window.addEventListener('keydown', function(e) {
     if ( e.keyCode === 27 && popup.classList.contains('modal-content-show') )
         popup.classList.remove('modal-content-show');
+        popup.classList.remove('modal-error');
 });
