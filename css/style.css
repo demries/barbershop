@@ -957,6 +957,7 @@ input[type="radio"]:checked + label::before {
     color: #000000;
     background: #f8f3f0 url("../img/index-content-bg.png");
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    z-index: 10;
 }
 
 .modal-content-map {
