@@ -396,27 +396,54 @@ h3 { font-size: 24px; }
 }
 
 .gallery-content {
+    max-height: 175px;
+    margin: 0;
+    overflow-y: auto;
+}
+
+.gallery-content img {
+    width: 135px;
+    height: 82px;
+    margin-right: 5px;
+}
+
+.gallery-live {
+    position: relative;
+    height: 260px;
+}
+
+.gallery-live .gallery-content {
     height: 164px;
     margin: 0;
     background-color: #cccccc;
     border: 7px solid #ffffff;
 }
 
-.gallery-content img {
+.gallery-live .gallery-content a {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.gallery-live .gallery-content img {
     width: 286px;
     height: 164px;
 }
 
-.gallery .btn {
+.gallery-live .btn {
     position: absolute;
     bottom: 0;
     width: 140px;
     margin: 0;
 }
 
-.gallery-prev { left: 0; }
+.gallery-live .gallery-prev { left: 0; }
 
-.gallery-next { right: 0; }
+.gallery-live .gallery-next { right: 0; }
+
+.no-js .gallery .btn { display: none; }
+
+.js .gallery .btn { display: block; }
 
 .appointment-form input {
     float: left;
@@ -1024,6 +1051,11 @@ input[type="radio"]:checked + label::before {
 .modal-content .login-form {
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+.no-js .login-form {
+    width: 300px;
+    margin: 0 auto;
 }
 
 .login-form input[type="text"],

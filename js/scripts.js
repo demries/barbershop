@@ -1,3 +1,27 @@
+var html = document.documentElement;
+html.className = html.className.replace('no-js', 'js'); // если подключился js
+
+
+var gallery = document.querySelector('.gallery');
+gallery.classList.add('gallery-live');
+
+// Добавляем управляющие элементы
+// Внимание! Плохая практика.
+// Только для быстрой демонстрации подхода.
+var buttons = '<button class="btn gallery-prev">Назад</button>' +
+              '<button class="btn gallery-next">Вперёд</button>';
+
+gallery.innerHTML = gallery.innerHTML + buttons;
+
+// Зададим начальное состояние кнопок
+var prev = document.querySelector('.gallery-prev');
+prev.setAttribute('disabled', 'disabled');
+
+// Инициализация завершена
+// Далее - типовой код работы галереи:
+// обработка событий, переключение слайдов и т.д.
+
+
 var overlay = document.querySelector('.modal-overlay');
 // Находим объект с классом login
 var link = document.querySelector('.login');

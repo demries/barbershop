@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Барбершоп &laquo;Бородинский&raquo;</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Добавление стилей при отключенном JS -->
+    <!-- <noscript>
+        <link href="css/noscript.css" rel="stylesheet">
+    </noscript> -->
 </head>
 <body>
     <header class="main-header">
@@ -20,7 +25,7 @@
                 </ul>
             </nav>
             <div class="user-block">
-                <a href="#" class="login">Вход</a>
+                <a href="login.html" class="login">Вход</a>
             </div>
         </div>
     </header>
@@ -61,10 +66,15 @@
                 <h2 class="index-content-title">Фотогалерея</h2>
                 <div class="gallery">
                     <figure class="gallery-content">
-                        <img src="img/photo-1.jpg" width="286" height="164" alt="">
+                        <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
+                        <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
+                        <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
+                        <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
+                        <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
+                        <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
+                        <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
+                        <a href="#"><img src="img/photo-1.jpg" width="286" height="164" alt=""></a>
                     </figure>
-                    <button class="btn gallery-prev" disabled>Назад</button>
-                    <button class="btn gallery-next">Вперёд</button>
                 </div>
             </div>
         </div>
@@ -81,7 +91,7 @@
                     пн - пт: с 10:00 до 22:00<br>
                     сб - вс: с 10:00 до 19:00
                 </p>
-                <a class="btn" id="js-open-map" href="#">Как проехать</a>
+                <a class="btn" id="js-open-map" href="contact.html">Как проехать</a>
                 <a class="btn" href="#">Обратная связь</a>
             </div>
             <div class="index-content-right">
