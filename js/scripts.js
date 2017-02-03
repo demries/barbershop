@@ -1,25 +1,28 @@
 var html = document.documentElement;
 html.className = html.className.replace('no-js', 'js'); // если подключился js
 
+try {
+    var gallery = document.querySelector('.gallery');
+    gallery.classList.add('gallery-live');
 
-var gallery = document.querySelector('.gallery');
-gallery.classList.add('gallery-live');
+    // Добавляем управляющие элементы
+    // Внимание! Плохая практика.
+    // Только для быстрой демонстрации подхода.
+    var buttons = '<button class="btn gallery-prev">Назад</button>' +
+                  '<button class="btn gallery-next">Вперёд</button>';
 
-// Добавляем управляющие элементы
-// Внимание! Плохая практика.
-// Только для быстрой демонстрации подхода.
-var buttons = '<button class="btn gallery-prev">Назад</button>' +
-              '<button class="btn gallery-next">Вперёд</button>';
+    gallery.innerHTML = gallery.innerHTML + buttons;
 
-gallery.innerHTML = gallery.innerHTML + buttons;
+    // Зададим начальное состояние кнопок
+    var prev = document.querySelector('.gallery-prev');
+    prev.setAttribute('disabled', 'disabled');
 
-// Зададим начальное состояние кнопок
-var prev = document.querySelector('.gallery-prev');
-prev.setAttribute('disabled', 'disabled');
-
-// Инициализация завершена
-// Далее - типовой код работы галереи:
-// обработка событий, переключение слайдов и т.д.
+    // Инициализация завершена
+    // Далее - типовой код работы галереи:
+    // обработка событий, переключение слайдов и т.д.
+} catch(e) {
+    console.log(e);
+}
 
 
 var overlay = document.querySelector('.modal-overlay');
@@ -47,6 +50,7 @@ link.addEventListener('click', function(e) {
     e.preventDefault(); // Отменяем действие по умолчанию
 
     // Добавляем к модальному окну класс modal-content-show
+    overlay.style.display = 'block';
     popup.classList.add('modal-content-show');
 
     if ( storage ) {
@@ -62,6 +66,7 @@ close.addEventListener('click', function(e) {
     // Удаляем у модального окна класс modal-content-show
     popup.classList.remove('modal-content-show');
     popup.classList.remove('modal-error');
+    overlay.style.display = '';
 });
 
 // Отлавливаем событие отправки формы модального окна
@@ -98,9 +103,11 @@ if ( mapPopup !== null ) {
 
 // Закрытие модального окна по нажатию на Esc
 window.addEventListener('keydown', function(e) {
-    if ( e.keyCode === 27 && popup.classList.contains('modal-content-show') )
+    if ( e.keyCode === 27 && popup.classList.contains('modal-content-show') ) {
         popup.classList.remove('modal-content-show');
         popup.classList.remove('modal-error');
+        overlay.style.display = '';
+    }
 
     if ( e.keyCode === 27 && mapPopup.classList.contains('modal-content-show') ) {
         mapPopup.classList.remove('modal-content-show');
