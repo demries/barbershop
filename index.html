@@ -93,7 +93,39 @@
                     <p>В нашей команде пополнение, Борис &laquo;Бритва&raquo; Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
                 </li>
             </ul>
-            <a class="news__to-all btn" href="#">Показать все</a>
+            <a class="news__to-all  btn" href="#">Показать все</a>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="reviews__wrapper  slider">
+            <h2 class="reviews__title">Отзывы о нас</h2>
+            <a class="reviews__write  btn" href="#">Оставить свой</a>
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-1" checked>
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-2">
+            <input class="slider__input" type="radio" name="reviews" id="reviews-input-3">
+            <div class="reviews__items">
+                <blockquote class="reviews__item  slider__item">
+                    <div class="reviews__author-foto">
+                        <img src="http://placehold.it/50x33" width="50" height="33" alt="Фото Трэвиса Баркера">
+                    </div>
+                    <cite class="reviews__author-name">Трэвис Баркер</cite>
+                    <p>Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+                </blockquote>
+                <blockquote class="reviews__item  slider__item">
+                    <div class="reviews__author-foto">
+                        <img src="http://placehold.it/50x33" width="50" height="33" alt="Фото Васи Пензы">
+                    </div>
+                    <cite class="reviews__author-name">Вася Пенза</cite>
+                    <p>Спасибо за бороду! Высший пилотаж.</p>
+                </blockquote>
+                <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+                <button class="reviews__next" type="button">Следующий отзыв</button>
+            </div>
+            <div class="reviews__toggles  slider__toggles">
+                <label class="slider__toggle" for="reviews-input-1">1</label>
+                <label class="slider__toggle" for="reviews-input-2">2</label>
+                <label class="slider__toggle" for="reviews-input-3">3</label>
+            </div>
         </div>
     </section>
 </body>
