@@ -14,9 +14,9 @@
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list">
-                    <li class="main-nav__item"><a>Главная</a></li>
+                    <li class="main-nav__item"><a href="#">Главная</a></li>
                     <li class="main-nav__item"><a href="#">Наши работы</a></li>
-                    <li class="main-nav__item  main-nav__item--active"><a href="#">Записаться</a></li>
+                    <li class="main-nav__item  main-nav__item--active"><a>Записаться</a></li>
                     <li class="main-nav__item"><a href="#">Контакты</a></li>
                     <li class="main-nav__item"><a href="#">HTML Academy</a></li>
                 </ul>
@@ -26,5 +26,83 @@
             </div>
         </nav>
     </header>
+    <section class="enroll">
+        <div class="enroll__wrapper">
+            <h2 class="enroll__title">Запись на стрижку</h2>
+            <form action="" method="get">
+                <input class="enroll__input" type="text" name="surname" placeholder="Фамилия">
+                <input class="enroll__input" type="text" name="name" placeholder="Имя">
+                <input class="enroll__input" type="text" name="patronymic" placeholder="Отчество">
+                <input class="enroll__input" type="tel" name="phone" placeholder="Контактный телефон">
+                <input class="enroll__input" type="email" name="email" placeholder="Контактный e-mail">
+                <fieldset class="selecting-beard">
+                    <legend class="selecting-beard__title">Выберите модель бороды:</legend>
+                    <ul class="selecting-beard__list">
+                        <li class="selecting-beard__item">
+                            <label>
+                                <input type="radio" name="beard" checked> адмирал
+                            </label>
+                        </li>
+                        <li class="selecting-beard__item">
+                            <label>
+                                <input type="radio" name="beard"> лесоруб
+                            </label>
+                        </li>
+                        <li class="selecting-beard__item">
+                            <label>
+                                <input type="radio" name="beard"> полярник
+                            </label>
+                        </li>
+                        <li class="selecting-beard__item">
+                            <label>
+                                <input type="radio" name="beard"> боярин
+                            </label>
+                        </li>
+                        <li class="selecting-beard__item">
+                            <label>
+                                <input type="radio" name="beard"> мудрец
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="services">
+                    <legend class="services__title">Дополнительные услуги:</legend>
+                    <ul class="services__list">
+                        <li class="service__item">
+                            <label>
+                                <input type="checkbox" name="service" checked> Подкрасить бороду
+                            </label>
+                        </li>
+                        <li class="service__item">
+                            <label>
+                                <input type="checkbox" name="service" checked> Накрутить усы
+                            </label>
+                        </li>
+                        <li class="service__item">
+                            <label>
+                                <input type="checkbox" name="service"> Причесать бороду
+                            </label>
+                        </li>
+                        <li class="service__item">
+                            <label>
+                                <input type="checkbox" name="service"> Подровнять виски
+                            </label>
+                        </li>
+                        <li class="service__item">
+                            <label>
+                                <input type="checkbox" name="service"> Убрать седину
+                            </label>
+                        </li>
+                        <li class="service__item">
+                            <label>
+                                <input type="checkbox" name="service"> Отполировать лысину
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button class="enroll__submit  btn" type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
